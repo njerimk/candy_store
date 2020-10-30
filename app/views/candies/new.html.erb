@@ -1,0 +1,29 @@
+<h1>Create A Candy</h1>
+<%= form_for :candy, url: candies_path do |f| %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+    </p>
+
+    <p>
+        <%= f.label :calories %><br>
+        <%= f.number_field :calories %>
+    </p>
+    
+    <p>
+        <%= f.label :wrapper_color %><br>
+        <%= f.text_field :wrapper_color %><br>
+    </p>
+
+    <p>
+        <%= f.label :has_nuts? %><br>
+        <%= f.check_box :has_nuts? %><br>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+
+
+
+<% end %>

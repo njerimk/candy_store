@@ -1,0 +1,7 @@
+<h1>List of Our Candies</h1>
+<% @candies.each do |candy| %>
+    <h3><%= candy.name %></h3>
+    <p><%= candy.calories %></p>
+    <p><%= candy.wrapper_color %></p>
+    <p><%= candy.has_nuts? %></p>
+<% end %>
